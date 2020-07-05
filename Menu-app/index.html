@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!---title-->
+    <title>App menu</title>
+    <!--stylesheet-->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="css/fontawesome/solid.css" rel="stylesheet" />
+    <!---meta-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--Javascript-->
+    <!-- <script src="js/highcharts.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script src="js/fontawesome/solid.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://code.highcharts.com/themes/dark-unica.js"></script>
+    </head>
+    <body onload="init()"   id="body">
+        <!--header-->
+        <header id="header">
+            <div class="hamburger" id="hamburguer" onclick="toggleMenu();">
+                <div class="line" id="line_top"></div>
+                <div class="line" id="line_middle"></div>
+                <div class="line" id="line_bottom"></div>
+            </div>
+            <div id='user'>
+                <!-- <img src="users/1001.png" class="userphoto" id="photo"/> -->
+                <div class="userphoto" id="photo">
+                    
+                </div>
+                <div>
+                    <div class="name" id="name">-------</div>
+                    <div class="role" id="role">---</div>
+                </div>
+            </div>
+           
+        </header>
+        <!--Side menu-->
+        <nav id="nav">
+            <div class="menu" id="menu">
+                <i class="fas fa-home icon light-icon"></i>
+                <label class="label-icon" id="icon-home">- - -</label>
+            </div>
+            </div>
+            <div class="menu" id="menu">
+                    <i class="fas fa-users icon light-icon" id="icon"> </i>
+                     <label class="label-icon" id="icon-user">- - -</label>
+             </div>
+             <div class="menu" id="menu">
+                <i class="fas fa-phone icon light-icon " id="icon"></i>
+                 <label class="label-icon" id="icon-phone">- - -</label>
+         </div>
+         <div class="menu" id="menu">
+            <i class="fas fa-chart-bar icon light-icon " id="icon"></i>
+             <label class="label-icon" id="icon-chart">- - -</label>
+        </div>
+        <div class="menu" id="menu">
+            <i class="fas fa-wrench icon light-icon " id="icon"></i>
+             <label class="label-icon" id="icon-wrench">- - -</label>
+        </div>
+        <div class="menu" id="menu">
+            <i class="fas fa-sign-out-alt icon light-icon " id="icon"></i>
+             <label class="label-icon" id="icon-logout">- - -</label>
+        </div>
+        </nav>
+        <!--Content-->
+        <div id="content">
+            <div id="layout">
+                <h3>Now</h3>
+                <div class="tables">
+                    <div class="agents">
+                        <h4>Agents</h3>
+                        <div class="content-table">
+                            <div id="image">
+                                <i class="fas fa-user-nurse fa-7x"></i>
+                            </div>
+                            <div class= "firt-data">
+                                <h6>Info</h6>
+                            </div>
+                            <div class="second-data">
+                                <h6>Info</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calls">
+                        <h4>Calls</h3>
+                        <div class="content-table">
+                            <div class="image"></div>
+                            <div class= "firt-data">
+                                <h6>Info</h6>
+                            </div>
+                            <div class="second-data">
+                                <h6>Info</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="averageTime">
+                        <h4>Average Time</h3>
+                        <div class="content-table">
+                            <div class="image"></div>
+                            <div class= "firt-data"></div>
+                            <div class="second-data"></div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Today</h3>
+                <div class="charts">
+                    <div class="chartAgents"  id="chart-agents"></div>
+                    <div class="chartCalls"   id="chart-calls"></div>
+                    <div class="chartAvTime"  id="chart-average"></div>
+                    <div class="charHandTime" id="handle-time"></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
